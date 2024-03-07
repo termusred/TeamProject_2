@@ -164,11 +164,31 @@ section {
 }
 footer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100%;
     z-index: 20;
     background-color: rgb(17, 16, 16);
+}
+.silka:hover {
+    color: var(--navHover);
+    background: transparent;
+}
+.silkalar,.contacs {
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+.silka {
+    color: white;
+    border: 0cap;
+    background: transparent;
+}
+.fcategory {
+    color: white;
+    border: 0cap;
+    background: transparent;
 }
 @media only screen and (max-width: 1300px) {
     .bg {
