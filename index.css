@@ -164,9 +164,29 @@ section {
 }
 footer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
     height: 22rem;
     z-index: 20;
     background-color: rgb(17, 16, 16);
+}
+.silka:hover {
+    color: var(--navHover);
+    background: transparent;
+}
+.silkalar,.contacs {
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+.silka {
+    color: white;
+    border: 0cap;
+    background: transparent;
+}
+.fcategory {
+    color: white;
+    border: 0cap;
+    background: transparent;
 }
