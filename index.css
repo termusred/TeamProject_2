@@ -10,7 +10,7 @@
     --text: rgb(241, 241, 241);
     --movieCard: 10px;
     --movieSizeW: 340px;
-    --movieSizeH: 180px;
+    --movieSizeH: 200px;
 }
 
 .bg {
@@ -42,8 +42,11 @@ html {
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 6px; 
+    background: black; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(160, 141, 141);
 }
 /* это две части нава */
 .box1 , .box2{
@@ -90,7 +93,11 @@ a {
 .con{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 12rem;
+}
+.account {
+    margin-left: 1rem;
 }
 .break {
     transform: scaleY(1.7);
@@ -109,21 +116,16 @@ a {
     justify-content: space-between;
     width: 4rem;
 }
-section {
-    display: block;
-    width: 100vw;
-    height: 60rem;
+.card-img, .card-img-top{
+    height: 12rem !important;
 }
-.new, .films, .series{ 
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 20rem;
-    overflow:scroll;
-    background-color: black;
+.card-body {
+    
+    background-color: rgb(221, 144, 0) !important;
 }
-
 .card {
+    display: inline-block;
+    border: 0px;
     /* 320 180 */
     height: var(--movieSizeH);
     width: var(--movieSizeW);
@@ -182,7 +184,7 @@ footer {
 }
 .silka {
     color: white;
-    border: 0cap;
+    border: 0rem;
     background: transparent;
 }
 .fcategory {
@@ -190,9 +192,25 @@ footer {
     border: 0cap;
     background: transparent;
 }
+
+section {
+    padding-top: 2rem;
+    display: block;
+    height: 80rem;
+    width: 100%;
+    background-color: black;
+}
 @media only screen and (max-width: 1300px) {
     .bg {
        width: 1500px;
        height: 1000px;
     }
   }
+.New, .Movies, .Series{ 
+    color: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 1rem;
+    background-color: transparent;
+}
